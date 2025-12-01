@@ -1,54 +1,71 @@
 # 🚢 Titanic Dataset Analysis
 
-This project analyzes the famous Titanic dataset to understand factors that influenced passenger survival. Using Python-based Exploratory Data Analysis (EDA), the notebook explores patterns across gender, age, class, embarkation point, and other key features.
+This project performs a complete Exploratory Data Analysis (EDA) on the Titanic dataset to understand which factors influenced passenger survival. The analysis includes data cleaning, handling missing values, feature engineering, and visualizations to highlight survival trends across different passenger groups.
 
 ---
 
 ## 📁 Project Overview
-The goal of this project is to uncover insights about survival rates by examining demographic and ticket-related variables. The analysis includes data cleaning, preprocessing, visualizations, and interpretation of patterns in the dataset.
+The goal of this project is to explore the Titanic dataset and uncover meaningful insights related to:
+- Passenger demographics  
+- Travel class and ticket details  
+- Family size and relationships  
+- Key factors impacting survival probability  
+
+Your notebook includes both data preprocessing and visualization-driven analysis to build a clear understanding of the patterns within the dataset.
 
 ---
 
-## 🛠️ Technologies Used
-- Python  
-- Jupyter Notebook  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
+## 🛠️ Tools & Libraries Used
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook**
 
 ---
 
-## 📌 Key Steps in the Analysis
+## 🔧 Data Cleaning & Preprocessing
+The project includes:
+- Handling missing values (`Age` filled using median, `Cabin` column dropped due to sparsity).
+- Cleaning categorical values like `Embarked`.
+- Converting data types where required.
+- Removing duplicates.
+- Standardizing column formats.
 
-### 1. **Data Loading & Exploration**
-- Inspected dataset structure  
-- Checked missing values and duplicates  
-- Understood key columns and data types  
+---
 
-### 2. **Data Cleaning**
-- Handled missing data (`Age`, `Cabin`, `Embarked`)  
-- Converted data types where necessary  
-- Created new features (if applicable)
+## 🧪 Feature Engineering
+You created additional features to improve analysis:
+- **FamilySize** = SibSp + Parch + 1  
+- **isAlone** (passenger traveling without family)  
+- **Title Extraction** from passenger names  
 
-### 3. **Exploratory Data Analysis**
-- Survival distribution by:
-  - Gender  
-  - Passenger Class (Pclass)  
-  - Age groups  
-  - Fare ranges  
-  - Embarkation point  
+These features help reveal hidden survival patterns.
+
+---
+
+## 📊 Exploratory Data Analysis
+The notebook includes visual analysis of:
+- Survival count and percentage  
+- Gender vs Survival  
+- Passenger Class (Pclass) vs Survival  
+- Age distribution & Age group survival  
+- Family size impact  
+- Embarkation point comparison  
 - Correlation heatmap  
-- Count plots and histograms  
+
+Multiple bar charts, histograms, countplots, and boxplots are used to show relationships clearly.
 
 ---
 
-## 📈 Insights & Findings
-- Females had a significantly higher survival rate than males  
-- Higher-class passengers (1st class) survived more than lower-class passengers  
-- Younger passengers tended to survive at higher rates  
-- Embarkation location played a role in survival likelihood  
+## 🔍 Key Insights
+- Females had significantly higher survival rates than males.  
+- First-class passengers survived more compared to lower classes.  
+- Young children showed higher survival probabilities.  
+- Passengers traveling alone had lower survival rates.  
+- Embarkation point influenced survival distributions.  
 
 ---
 
-## 📂 Repository Structure
+
